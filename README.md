@@ -1,7 +1,8 @@
-### Design & Architect
+### Design & Architect 架构设计
 
 * Hints for Computer System Design
 
+- - -
 
 * Architecting for Latency
 
@@ -13,36 +14,22 @@
 
 * Consistency Tradeoffs in Modern Distributed Database System Design
 
-
-### Distributed Transaction
-
-* Distributed Transaction Processing - The XA Specification
-
-* Towards Distributed Atomic Transactions over RESTful Services
-
-* Your Coffee Shop Doesn’t Use Two-Phase Commit
-
-* The Transaction Concept - Virtues and Limitations
-
-* Life beyond Distributed Transactions - an Apostate’s Opinion
+* Lessons from Giant-Scale Services
 
 
-### Microservice
+
+### Microservice 微服务
+
+* Microservices - A definition of this new architectural term
 
 * Microservices - yesterday, today, and tomorrow
 
 * MicroServices – Java the Unix way
 
-* Microservices - A definition of this new architectural term
-
-* Microservices- yesterday, today, and tomorrow
+- - -
 
 * Microsoft - Cloud Design Patterns
 
-
-### Replication
-
-* PacificA- Replication in Log-Based Distributed Storage Systems
 
 
 ### CAP
@@ -53,7 +40,6 @@
 
 * CAP Twelve Years Later - How the "Rules" Have Changed
 
-* Business Transactions, Compensation and the TryCancel:Confirm (TCC) Approach for Web Services 
 
 * A Critique of the CAP Theorem
 
@@ -65,6 +51,7 @@ FLP
 * A Brief Tour of FLP Impossibility - Paper Trail
 
 
+
 ### Paxos
 
 * Paxos Made Simple
@@ -73,15 +60,18 @@ FLP
 
 - - -
 
-* Paxos Made Live - An Engineering Perspective
-
-* Using Paxos to Build a Scalable, Consistent, and Highly Available Datastore
-
 * Vertical Paxos and Primary-Backup Replication
 
 * The ABCD’s of Paxos
 
+- - -
+
 * Implementing Replicated Logs with Paxos
+
+* Paxos Made Live - An Engineering Perspective
+
+* Using Paxos to Build a Scalable, Consistent, and Highly Available Datastore
+
 
 
 ### Raft
@@ -90,15 +80,54 @@ FLP
 
 
 
+### Zookeeper
+
+* ZooKeeper: Wait-free coordination for Internet-scale systems
+
+- - -
+
+Zab
+
+* Zab: High-performance broadcast for primary-backup systems
+
+* ZooKeeper’s atomic broadcast protocol - Theory and practice
+
+* A simple totally ordered broadcast protocol
+
+- - - 
+
+* ZooKeeper Recipes and Solutions
+
+
+
+
+### Distributed Transaction 分布式事务
+
+* The Transaction Concept - Virtues and Limitations
+
+* Life beyond Distributed Transactions - an Apostate’s Opinion
+
+- - -
+
+* Distributed Transaction Processing - The XA Specification
+
+- - -
+
+Not 2PC
+
+* Your Coffee Shop Doesn’t Use Two-Phase Commit
+
+* Business Transactions, Compensation and the TryCancel:Confirm (TCC) Approach for Web Services 
+
+* Towards Distributed Atomic Transactions over RESTful Services
+
+
+
 ### The Googles
 
 * The Google File System
 
-* Lecture - The Google File System
-
 * Case Study GFS - Evolution on Fast-forward
-
-- - -
 
 * Bigtable - A Distributed Storage System for Structured Data
 
@@ -106,49 +135,48 @@ FLP
 
 * The Chubby lock service for loosely-coupled distributed systems
 
-* Lecture - The Google Bigtable
+- - -
 
-* Lecture - The Google MapReduce
+* Lecture: The Google File System
 
-* Lecture - Google Chubby lock service
+* Lecture: The Google Bigtable
+
+* Lecture: The Google MapReduce
+
+* Lecture: Google Chubby lock service
 
 - - -
 
-* Dapper, a Large-Scale Distributed Systems Tracing Infrastructure
+* Dapper: a Large-Scale Distributed Systems Tracing Infrastructure
 
-* Spanner - Google’s Globally-Distributed Database
+* Spanner: Google’s Globally-Distributed Database
 
-* An Overview of Spanner - Google's Globally Distributed Database on SlideShare
+* An Overview of Spanner: Google's Globally Distributed Database on SlideShare
 
-* Omega - flexible, scalable schedulers for large compute clusters
+* Omega: flexible, scalable schedulers for large compute clusters
 
-* F1 - A Distributed SQL Database That Scales
+* F1: A Distributed SQL Database That Scales
 
-* Lessons from Giant-Scale Services
 
-* Pregel - A System for Large-Scale Graph Processing
+* Pregel: A System for Large-Scale Graph Processing
+
+
+
+### Hadoop
+
+* Apache Hadoop Goes Realtime at Facebook
+
 
 
 ### Dynamo family
 
-* Dynamo - Amazon’s Highly Available Key-value Store
+* Dynamo: Amazon’s Highly Available Key-value Store
 
-* Cassandra - A Decentralized Structured Storage System
-
-
-
-* Amazon Aurora - Design Considerations for High Throughput Cloud-Native Relational Databases
+* Cassandra: A Decentralized Structured Storage System
 
 
-### Zookeeper
+* Amazon Aurora: Design Considerations for High Throughput Cloud-Native Relational Databases
 
-* Zab - High-performance broadcast for primary-backup systems
-
-* ZooKeeper - Wait-free coordination for Internet-scale systems
-
-* ZooKeeper’s atomic broadcast protocol- Theory and practice
-
-* ZooKeeper Recipes and Solutions
 
 
 ### Kafka
@@ -159,7 +187,7 @@ FLP
 
 ### Apache Storm
 
-* Storm - Nathan Marz
+* Storm: Nathan Marz
 
 * Storm @Twitter
 
@@ -169,7 +197,7 @@ FLP
 
 * Backpressure model for Storm 2.0
 
-* Choosing a High performance Queue for Storm.docx
+* Choosing a High performance Queue for Storm
 
 * Storm Messaging Subsystem Redesign
 
@@ -178,13 +206,23 @@ FLP
 * Twitter Heron - Stream Processing at Scale
 
 
+
 ### Congestion Control
 
 * Blue: A New Class of Active Queue Management Algorithms
 
     AQM: Active Queue Management
  
+
+
+
+### Replication 复制
+
+* PacificA- Replication in Log-Based Distributed Storage Systems
+
+
  
+
 ### Mechanical Sympathy
  
 * CPU Cache Flushing Fallacy
@@ -204,6 +242,7 @@ FLP
 * Memory Barriers a Hardware View for Software Hackers
 
 
+
 ### Python
 
 * Python Modules & Packages
@@ -217,8 +256,10 @@ FLP
 * Generator Tricks For Systems Programmers
 
 
+
 ### Data Structures
 
-* Skip Lists- A Probabilistic Alternative to Balanced Trees
+* Skip Lists: A Probabilistic Alternative to Balanced Trees
 
 * Skiplist-Based Concurrent Priority Queues
+
